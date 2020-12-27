@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap");
+
+body {
+  background: rgba(24, 23, 25, 1);
+}
+
+.navbar {
+  background: rgba(24, 23, 25, 1);
+}
+
+.navbar-brand {
+  border: 1px solid white;
+  padding: 0 5px;
+  font-size: 14px;
+  font-family: "Crimson Pro", serif;
+}
+
+.nav-item {
+  padding: 10px 20px;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white !important;
+}
+
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+#app .row .col-md-6 h3 {
+  font-family: "Lora", serif;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  line-height: 61px;
+}
+
+#app .row .col-md-6 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  line-height: 29px;
+  padding: 20px 0;
+  width: 25vw;
+}
+
+#app .row .col-md-6 a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  background: rgba(24, 23, 25, 1);
+  color: white;
+  border-radius: 0;
+  top: -70px;
+  left: 150px;
+}
+
+.card h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.card span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.card h4 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(169, 169, 169, 1);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  border: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  -webkit-transition: transform 0.35s ease-in-out;
+  -moz-transition: transform 0.35s ease-in-out;
+  -o-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+/* .navbar-toggler {
+  border: none;
+} */
+
+/* .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+} */
+
+@media screen and (max-width: 576px) {
+  .navbar-collapse {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+  }
+
+  .navbar-collapse ul {
+    margin-top: 180px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    z-index: 2;
+  }
+  #app .row .col-md-6 h3 {
+    font-size: 36px;
+  }
+  #app .row .col-md-6 p {
+    font-size: 14px;
+    width: 60vw;
+  }
+
+  .kiri-atas {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    top: -110px;
+    left: 17%;
+    width: 23rem !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  footer p {
+    border-top: 1px solid white;
+  }
+}
